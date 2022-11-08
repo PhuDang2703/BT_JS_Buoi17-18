@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BTJS Buổi 7+8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="myDivs" class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><b>Thiết kế layout cho người dùng chọn thực hiện các chức năng bên dưới:</b></div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Vui lòng nhập số</label>
+                  <input id="txtNum" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Nhập cho bài 6</label>
+                  <input id="viTri1" type="text" class="form-control" placeholder="Nhập vị trí 1" />
+                  <input id="viTri2" type="text" class="form-control" placeholder="Nhập vị trí 2" />
+                </div>
+                <div class="form-group">
+                  <label>Nhập cho bài 9</label>
+                  <input id="numBer1" placeholder="Nhập mảng số thực" type="text" class="form-control" />
+                  <button class="btn btn-success" onclick="themso1()">
+                    Thêm số thực
+                  </button>
+                  <div id="infoBaiTap9" class="alert alert-success mt-2"></div>
+                </div>
+  
+                <button class="btn btn-success" onclick="addNum()">
+                  Thêm số
+                </button>
+                <button class="btn btn-info" onclick="tongSoDuong()">
+                  1. Tổng các số dương
+                </button>
+                <button class="btn btn-warning" onclick="demSoDuong()">
+                  2. Đếm số dương
+                </button>
+                <button class="btn btn-danger" onclick="soMin()">
+                  3. Tìm số nhỏ nhất
+                </button>
+                <button class="btn btn-dark mt-1" onclick="soDuongNhoNhat()">
+                  4. Tìm số dương nhỏ nhất
+                 </button>
+                <button class="btn btn-primary mt-1" onclick="soChanCuoi()">
+                  5. Tìm số chẵn cuối cùng
+                </button>
+                <button class="btn btn-info mt-1" onclick="doiCho2So()">
+                  6. Đổi chỗ 2 giá trị
+                </button>
+                <button class="btn btn-success mt-1" onclick="xepTangDan()">
+                  7. Sắp xếp tăng dần  
+                </button>
+                <button class="btn btn-secondary mt-1" onclick="sntDauTien()">
+                  8. Tìm số nguyên tố đầu tiên
+                </button>
+                <button class="btn btn-danger mt-1" onclick="demSoNguyen()">
+                  9. Đếm số nguyên
+                </button>
+                <button class="btn btn-primary mt-1" onclick="soSanh()">
+                  10. So sánh số lượng dương và âm
+                </button>
+              </div>
+              <div class="card-footer text-muted">
+                <div id="interfaceListNumber" class="alert alert-success"></div>
+                <div id="infoTongSoDuong" class="alert alert-success"></div>
+                <div id="infoDemSoDuong" class="alert alert-success"></div>
+                <div id="infoSoNhoNhat" class="alert alert-success"></div>
+                <div id="info4" class="alert alert-success"></div>
+                <div id="info5" class="alert alert-success"></div>
+                <div id="info6" class="alert alert-success"></div>
+                <div id="info7" class="alert alert-success"></div>
+                <div id="info8" class="alert alert-success"></div>
+                <div id="info9" class="alert alert-success"></div>
+                <div id="info10" class="alert alert-success"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
